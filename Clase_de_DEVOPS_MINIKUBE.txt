@@ -1,0 +1,23 @@
+minikube dashboard --url
+kbenetes dashboard 
+kubectl run nginx --image=nginx:latest --port=80
+kubectl get pods
+kubectl describe pod
+kubectl logs nginx
+kubectl exec -it nginx -- /bin/bash
+kubectl expose pod nginx --type=LoadBalancer --port=8080 --target-port=80
+minikube tunnel
+
+
+kubectl get pods
+kubectl delete pod nombredelpod 
+kubectl delete pod deploy-nginx-5f6dd755fb-b5vfz
+kubectl get deployments 
+
+practica11
+kubectl apply -f services.yaml
+ kubectl get svc web-service
+
+kubectl describe svc web-service
+
+

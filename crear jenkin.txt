@@ -1,0 +1,24 @@
+configuracion del codigo 
+git
+url del proyecto
+añadir credenciales 
+add - none -
+username whith password
+
+scope global 
+ username Diana-Rebeca-Ortega
+Treat username as secret 
+Password no, hacer un tokens 
+tokens classic 
+actvar todos los scopes 
+Github_Jenkin en ID ´PONERLO EN CREDECIALES 
+
+en branch dejar */master
+vuild steps
+añadir pasos ejecutar tarras maven de nivel superior 
+goles CLEAN INSTALL
+contruir ahora 
+
+zona de trabajo billing 
+
+

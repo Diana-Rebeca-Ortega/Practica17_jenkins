@@ -1,0 +1,871 @@
+minikube start 
+minikube dashboard --url
+
+dentro de la carpeta db
+kubectl apply -f ./
+
+
+dentro de la carpeta bilinapp
+kubectl apply -f ./
+
+Pra cifrar en mac
+echo  -n "qwerty" | base64
+Para cifrar en windows
+[Convert]::ToBase64String([System.Text.Endocoding])
+
+
+Para descifrar 
+echo "cG9zdGdyZXM=" | base64 -d
+
+
+
+minikube docker -env
+
+cd ..
+
+cd billingApp_images_v4
+
+cd java
+
+
+
+crear el segndo contenedor del frontend
+
+
+
+kubectl get all
+dentro de billing app
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+
+PS C:\Users\Diana Os> cd Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app
+cd : No se encuentra la ruta de acceso 'C:\Users\Diana
+Os\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app' porque no existe.
+En línea: 1 Carácter: 1
++ cd Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Ku ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Diana ..._BILLINGAPP\app:String) [Set-Location], ItemNotFoundE
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Diana Os> cd C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app
+Set-Location : No se encuentra ningún parámetro de posición que acepte el argumento
+'Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app'.
+En línea: 1 Carácter: 1
++ cd C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Diana Os> cd Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube docker -env
+Usage of C:\Program Files\Kubernetes\Minikube\minikube.exe:
+      --add_dir_header                      If true, adds the file directory to the header of the log messages
+      --alsologtostderr                     log to standard error as well as files (no effect when -logtostderr=true)
+      --alsologtostderrthreshold severity   logs at or above this threshold go to stderr when -alsologtostderr=true (no effect when -logtostderr=true)
+  -h, --help
+      --legacy_stderr_threshold_behavior    If true, stderrthreshold is ignored when logtostderr=true (legacy behavior). If false, stderrthreshold is honored even when logtostderr=true (default true)
+      --log_backtrace_at traceLocation      when logging hits line file:N, emit a stack trace (default :0)
+      --log_dir string                      If non-empty, write log files in this directory (no effect when -logtostderr=true)
+      --log_file string                     If non-empty, use this log file (no effect when -logtostderr=true)
+      --log_file_max_size uint              Defines the maximum size a log file can grow to (no effect when -logtostderr=true). Unit is megabytes. If the value is 0, the maximum file size is unlimited. (default 1800)
+      --logtostderr                         log to standard error instead of files (default true)
+      --one_output                          If true, only write logs to their native severity level (vs also writing to each lower severity level; no effect when -logtostderr=true)
+      --skip_headers                        If true, avoid header prefixes in the log messages
+      --skip_log_headers                    If true, avoid headers when opening log files (no effect when -logtostderr=true)
+      --stderrthreshold severity            logs at or above this threshold go to stderr when writing to files and stderr (no effect when -logtostderr=true or -alsologtostderr=true unless -legacy_stderr_threshold_behavior=false) (default 2)
+  -v, --v Level                             number for the log level verbosity
+      --vmodule moduleSpec                  comma-separated list of pattern=N settings for file-filtered logging
+flag needs an argument: 'v' in -v
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube docker-env
+! Using the docker-env command with the containerd runtime is a highly experimental feature, please provide feedback or contribute to make it better
+
+X Saliendo por un error SSH_AGENT_START: starting an SSH agent on Windows is not yet supported
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube delete
+* Eliminando "minikube" en docker...
+* Eliminando contenedor "minikube" ...
+* Eliminando C:\Users\Diana Os\.minikube\machines\minikube...
+* Removed all traces of the "minikube" cluster.
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube start --driver=docker
+* minikube v1.39.0 en Microsoft Windows 10 Pro 22H2
+* Using the docker driver based on user configuration
+* Using Docker Desktop driver with root privileges
+* Starting "minikube" primary control-plane node in "minikube" cluster
+* Pulling base image v0.0.51 ...
+* Creating docker container (CPUs=2, Memory=8100MB) ...
+* Preparando Kubernetes v1.37.0 en containerd 2.3.4...
+* Configurando CNI CNI ...
+* Verifying Kubernetes components...
+  - Using image gcr.io/k8s-minikube/storage-provisioner:v5
+* Complementos habilitados: storage-provisioner, default-storageclass
+* Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube docker-env
+! Using the docker-env command with the containerd runtime is a highly experimental feature, please provide feedback or contribute to make it better
+
+X Saliendo por un error SSH_AGENT_START: starting an SSH agent on Windows is not yet supported
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load <nombre-de-tu-imagen>:<tag>
+En línea: 1 Carácter: 21
++ minikube image load <nombre-de-tu-imagen>:<tag>
++                     ~
+El operador '<' está reservado para uso futuro.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load <nombre-de-tu-imagen>:<tag>
+En línea: 1 Carácter: 21
++ minikube image load <nombre-de-tu-imagen>:<tag>
++                     ~
+El operador '<' está reservado para uso futuro.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> docker images
+                                                                                                    i Info →   U  In Use
+IMAGE                                                                   ID             DISK USAGE   CONTENT SIZE   EXTRA
+dianaort/proyecto_autos_amistosos:latest                                b18da57808e1        405MB          142MB    U
+gcr.io/k8s-minikube/kicbase:v0.0.51                                     146cd636030e       1.89GB          532MB
+gcr.io/k8s-minikube/kicbase@sha256:4a1c825b61479e6c898851ea66f13c620aaeab6002746e95067fc2c4b38a0b24
+                                                                        4a1c825b6147       1.89GB          532MB    U
+mysql:8.0                                                               7dcddc01f13b        1.1GB          249MB    U
+proyecto_autos_amistosos-main-app:latest                                b18da57808e1        405MB          142MB    U
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> Get-Content deployment-back.yaml, deployment-front.yaml | Select-String "image:"
+
+          image: billingapp-back:0.0.4
+          image: billingapp-front:0.0.4
+
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load billingapp-back:0.0.4
+! The image 'billingapp-back:0.0.4' was not found; unable to add it to cache.
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load billingapp-front:0.0.4
+! The image 'billingapp-front:0.0.4' was not found; unable to add it to cache.
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load billingapp-back:0.0.4
+Get-Process : No se encuentra ningún parámetro de posición que acepte el argumento
+'Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>'.
+En línea: 1 Carácter: 1
++ PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> ! The image 'billingapp-back:0.0.4' was not found; unable to add it to cache.
+En línea: 1 Carácter: 2
++ ! The image 'billingapp-back:0.0.4' was not found; unable to add it t ...
++  ~
+Falta una expresión después del operador unario '!'.
+En línea: 1 Carácter: 3
++ ! The image 'billingapp-back:0.0.4' was not found; unable to add it t ...
++   ~~~
+Token 'The' inesperado en la expresión o la instrucción.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load billingapp-front:0.0.4
+Get-Process : No se encuentra ningún parámetro de posición que acepte el argumento
+'Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>'.
+En línea: 1 Carácter: 1
++ PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> ! The image 'billingapp-front:0.0.4' was not found; unable to add it to cache.
+En línea: 1 Carácter: 2
++ ! The image 'billingapp-front:0.0.4' was not found; unable to add it  ...
++  ~
+Falta una expresión después del operador unario '!'.
+En línea: 1 Carácter: 3
++ ! The image 'billingapp-front:0.0.4' was not found; unable to add it  ...
++   ~~~
+Token 'The' inesperado en la expresión o la instrucción.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLING[+] Building 0.1s (1/1) FINISHED                                                                   docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.1s
+ => => transferring dockerfile: 2B                                                                                 0.0s
+ERROR: failed to build: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/67mwuusrbiphv071gdne93xgm
+
+What's next:
+    Debug this build failure with Gordon → docker ai "help me fix this build failure"
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> Get-ChildItem ..\billingApp_images_v4
+
+
+    Directorio: C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kube
+    rnetes_BILLINGAPP\billingApp_images_v4
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----     09/02/2021  02:56 a. m.                angular
+d-----     28/10/2022  06:12 a. m.                java
+-a----     22/09/2025  08:56 a. m.           6148 .DS_Store
+
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLING[+] Building 1.9s (3/3) FINISHED                                                                   docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.1s
+ => => transferring dockerfile: 389B                                                                               0.0s
+ => ERROR [internal] load metadata for docker.io/library/openjdk:17-jdk-slim-bullseye                              1.6s
+ => [auth] library/openjdk:pull token for registry-1.docker.io                                                     0.0s
+------
+ > [internal] load metadata for docker.io/library/openjdk:17-jdk-slim-bullseye:
+------
+Dockerfile:1
+--------------------
+   1 | >>> FROM openjdk:17-jdk-slim-bullseye
+   2 |     RUN addgroup -system devopsc && useradd -G devopsc javams
+   3 |     USER javams:devopsc
+--------------------
+ERROR: failed to build: failed to solve: openjdk:17-jdk-slim-bullseye: failed to resolve source metadata for docker.io/library/openjdk:17-jdk-slim-bullseye: docker.io/library/openjdk:17-jdk-slim-bullseye: not found
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/mxmtlrfojbn0pf14z1ml608an
+
+What's next:
+    Debug this build failure with Gordon → docker ai "help me fix this build failure"
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> docker build -t billingapp-back:0.0.4 ..\billingApp_images_v4\java
+[+] Building 195.1s (7/8)                                                                          docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 390B                                                                               0.0s
+ => [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk-alpine                                   3.2s
+ => [auth] library/eclipse-temurin:pull token for registry-1.docker.io                                             0.0s
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 2B                                                                                    0.0s
+ => [1/3] FROM docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6dfa4c1  191.1s
+ => => resolve docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6dfa4c1c5  0.1s
+ => => sha256:6fb0ff8d01777a4fc494bddb9df1f3d50d8ea89fbdd2f4d95b7c4e25672e9617 2.46kB / 2.46kB                     0.4s
+ => => sha256:6aaaca2d8bd94e9347308b5e6a8928f795d6a3c376d73e73210662d948346504 129B / 129B                         0.4s
+ => => sha256:271b0c979ba5426534d499a4752db1936fee768304d2ed1a152b5e9b1da7d607 144.97MB / 144.97MB               188.4s
+ => => sha256:d03e63f99bb217b1f7ee413f177f42ba8fe72c8aff59fe998b0112c9e23649a2 21.44MB / 21.44MB                  22.4s
+ => => sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5 3.85MB / 3.85MB                     4.7s
+ => => extracting sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5                          0.3s
+ => => extracting sha256:d03e63f99bb217b1f7ee413f177f42ba8fe72c8aff59fe998b0112c9e23649a2                          0.9s
+ => => extracting sha256:271b0c979ba5426534d499a4752db1936fee768304d2ed1a152b5e9b1da7d607                          2.3s
+ => => extracting sha256:6aaaca2d8bd94e9347308b5e6a8928f795d6a3c376d73e73210662d948346504                          0.0s
+[+] Building 5.9s (9/9) FINISHED                                                                   docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 387B                                                                               0.0s
+ => [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk-alpine                                   1.3s
+ => [auth] library/eclipse-temurin:pull token for registry-1.docker.io                                             0.0s
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => CACHED [1/3] FROM docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6d  0.1s
+ => => resolve docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6dfa4c1c5  0.0s
+ => [internal] load build context                                                                                  0.0s
+ => => transferring context: 435B                                                                                  0.0s
+ => [2/3] RUN addgroup -S devopsc && adduser -S -G devopsc javams                                                  0.3s
+ => [3/3] ADD  app.jar                                                                                             0.2s
+ => exporting to image                                                                                             3.9s
+ => => exporting layers                                                                                            3.0s
+ => => exporting manifest sha256:2793c1d2f0e0e27159d347e08b1fe53917eeb2fd546ed598aaab852251c690a8                  0.0s
+ => => exporting config sha256:ec99093f3144717507260a34394968ef3545f0fafed84efa010bdab998286248                    0.0s
+ => => exporting attestation manifest sha256:6bbcc21e22861f86a34877e5fc8c8d6f0962acfc06c6dd9c0bb48458ee4f06b2      0.0s
+ => => exporting manifest list sha256:31263e025cfd49a252599568cb74d78c77434a068ebb1bac4bf9776333634197             0.0s
+ => => naming to docker.io/library/billingapp-back:0.0.4                                                           0.0s
+ => => unpacking to docker.io/library/billingapp-back:0.0.4                                                        0.6s
+   4 |     ENV JAVA_OPTS=""
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/u0isjbmbhx110esg6jdg92s3x
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> ete successfully: exit code: 1
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> d details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/m394wr85zgv82byo8ywdqb4pl
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> xt:
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> rs\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGPS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> docker build -t billingapp-back:0.0.4 ..\billingApp_images_v4\java
+Get-Process : No se encuentra ningún parámetro de posición que acepte el argumento
+'Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>'.
+En línea: 1 Carácter: 1
++ PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> [+] Building 195.1s (7/8)                                                                          docker:desktop-linux
+En línea: 1 Carácter: 2
++ [+] Building 195.1s (7/8)                                             ...
++  ~
+Falta el nombre de tipo después de '['.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingTypename
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [internal] load build definition from Dockerfile                                                               0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [internal] load build definition from Dockerfile                  ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => transferring dockerfile: 390B                                                                               0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => transferring dockerfile: 390B                                  ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk-alpine                                   3.2s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [internal] load metadata for docker.io/library/eclipse-temurin:17 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [auth] library/eclipse-temurin:pull token for registry-1.docker.io                                             0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [auth] library/eclipse-temurin:pull token for registry-1.docker.i ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [internal] load .dockerignore                                                                                  0.1s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [internal] load .dockerignore                                     ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => transferring context: 2B                                                                                    0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => transferring context: 2B                                       ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [1/3] FROM docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6dfa4c1  191.1s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [1/3] FROM docker.io/library/eclipse-temurin:17-jdk-alpine@sha256 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => resolve docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6dfa4c1c5  0.1s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => resolve docker.io/library/eclipse-temurin:17-jdk-alpine@sha256 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => sha256:6fb0ff8d01777a4fc494bddb9df1f3d50d8ea89fbdd2f4d95b7c4e25672e9617 2.46kB / 2.46kB                     0.4s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => sha256:6fb0ff8d01777a4fc494bddb9df1f3d50d8ea89fbdd2f4d95b7c4e2 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => sha256:6aaaca2d8bd94e9347308b5e6a8928f795d6a3c376d73e73210662d948346504 129B / 129B                         0.4s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => sha256:6aaaca2d8bd94e9347308b5e6a8928f795d6a3c376d73e73210662d ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => sha256:271b0c979ba5426534d499a4752db1936fee768304d2ed1a152b5e9b1da7d607 144.97MB / 144.97MB               188.4s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => sha256:271b0c979ba5426534d499a4752db1936fee768304d2ed1a152b5e9 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => sha256:d03e63f99bb217b1f7ee413f177f42ba8fe72c8aff59fe998b0112c9e23649a2 21.44MB / 21.44MB                  22.4s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => sha256:d03e63f99bb217b1f7ee413f177f42ba8fe72c8aff59fe998b0112c ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5 3.85MB / 3.85MB                     4.7s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcf ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => extracting sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5                          0.3s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => extracting sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => extracting sha256:d03e63f99bb217b1f7ee413f177f42ba8fe72c8aff59fe998b0112c9e23649a2                          0.9s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => extracting sha256:d03e63f99bb217b1f7ee413f177f42ba8fe72c8aff59 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => extracting sha256:271b0c979ba5426534d499a4752db1936fee768304d2ed1a152b5e9b1da7d607                          2.3s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => extracting sha256:271b0c979ba5426534d499a4752db1936fee768304d2 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => extracting sha256:6aaaca2d8bd94e9347308b5e6a8928f795d6a3c376d73e73210662d948346504                          0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => extracting sha256:6aaaca2d8bd94e9347308b5e6a8928f795d6a3c376d7 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> [+] Building 5.9s (9/9) FINISHED                                                                   docker:desktop-linux
+En línea: 1 Carácter: 2
++ [+] Building 5.9s (9/9) FINISHED                                      ...
++  ~
+Falta el nombre de tipo después de '['.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingTypename
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [internal] load build definition from Dockerfile                                                               0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [internal] load build definition from Dockerfile                  ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => transferring dockerfile: 387B                                                                               0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => transferring dockerfile: 387B                                  ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk-alpine                                   1.3s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [internal] load metadata for docker.io/library/eclipse-temurin:17 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [auth] library/eclipse-temurin:pull token for registry-1.docker.io                                             0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [auth] library/eclipse-temurin:pull token for registry-1.docker.i ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [internal] load .dockerignore                                                                                  0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [internal] load .dockerignore                                     ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => transferring context: 2B                                                                                    0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => transferring context: 2B                                       ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => CACHED [1/3] FROM docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6d  0.1s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => CACHED [1/3] FROM docker.io/library/eclipse-temurin:17-jdk-alpine ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => resolve docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6dfa4c1c5  0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => resolve docker.io/library/eclipse-temurin:17-jdk-alpine@sha256 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [internal] load build context                                                                                  0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [internal] load build context                                     ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => transferring context: 435B                                                                                  0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => transferring context: 435B                                     ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [2/3] RUN addgroup -S devopsc && adduser -S -G devopsc javams                                                  0.3s
+En línea: 1 Carácter: 35
++  => [2/3] RUN addgroup -S devopsc && adduser -S -G devopsc javams     ...
++                                   ~~
+El token '&&' no es un separador de instrucciones válido en esta versión.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidEndOfLine
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => [3/3] ADD  app.jar                                                                                             0.2s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => [3/3] ADD  app.jar                                                ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => exporting to image                                                                                             3.9s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => exporting to image                                                ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => exporting layers                                                                                            3.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => exporting layers                                               ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => exporting manifest sha256:2793c1d2f0e0e27159d347e08b1fe53917eeb2fd546ed598aaab852251c690a8                  0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => exporting manifest sha256:2793c1d2f0e0e27159d347e08b1fe53917ee ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => exporting config sha256:ec99093f3144717507260a34394968ef3545f0fafed84efa010bdab998286248                    0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => exporting config sha256:ec99093f3144717507260a34394968ef3545f0 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => exporting attestation manifest sha256:6bbcc21e22861f86a34877e5fc8c8d6f0962acfc06c6dd9c0bb48458ee4f06b2      0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => exporting attestation manifest sha256:6bbcc21e22861f86a34877e5 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => exporting manifest list sha256:31263e025cfd49a252599568cb74d78c77434a068ebb1bac4bf9776333634197             0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => exporting manifest list sha256:31263e025cfd49a252599568cb74d78 ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => naming to docker.io/library/billingapp-back:0.0.4                                                           0.0s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => naming to docker.io/library/billingapp-back:0.0.4              ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>  => => unpacking to docker.io/library/billingapp-back:0.0.4                                                        0.6s
+=> : El término '=>' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 2
++  => => unpacking to docker.io/library/billingapp-back:0.0.4           ...
++  ~~
+    + CategoryInfo          : ObjectNotFound: (=>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>    4 |     ENV JAVA_OPTS=""
+ENV : El término 'ENV' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 12
++    4 |     ENV JAVA_OPTS=""
++            ~~~
+    + CategoryInfo          : ObjectNotFound: (ENV:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/u0isjbmbhx110esg6jdg92s3x
+View : El término 'View' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ View build details: docker-desktop://dashboard/build/desktop-linux/de ...
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (View:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> ete successfully: exit code: 1
+Get-Process : No se encuentra ningún parámetro de posición que acepte el argumento
+'Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>'.
+En línea: 1 Carácter: 1
++ PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> d details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/m394wr85zgv82byo8ywdqb4pl
+Get-Process : No se encuentra ningún parámetro de posición que acepte el argumento
+'Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>'.
+En línea: 1 Carácter: 1
++ PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> xt:
+Get-Process : No se encuentra ningún parámetro de posición que acepte el argumento
+'Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app>'.
+En línea: 1 Carácter: 1
++ PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> rs\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGPS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernete[+] Building 20.0s (10/10) FINISHED                                                                docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.1s
+ => => transferring dockerfile: 318B                                                                               0.0s
+ => [internal] load metadata for docker.io/library/nginx:alpine                                                    3.5s
+ => [auth] library/nginx:pull token for registry-1.docker.io                                                       0.0s
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [1/4] FROM docker.io/library/nginx:alpine@sha256:df221db836e1754089190208cee7eeda94f233197056426eda74a43ab1a  14.4s
+ => => resolve docker.io/library/nginx:alpine@sha256:df221db836e1754089190208cee7eeda94f233197056426eda74a43ab1ab  0.0s
+ => => sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 20.53MB / 20.53MB                  13.0sG
+ => => sha256:e76228b47809e8a4bd37a6ba52a04d282d8c72ddf0ff9e8b83fd6318631abd52 1.40kB / 1.40kB                     0.7s
+ => => sha256:64c8194480fee2c03e01cc561cf5542733627d2c7de493a028139677025f975c 1.21kB / 1.21kB                     0.7sG
+ => => sha256:9a9a644fdd6a3681d43dace44c8cfef374cfd7b24f433113379ea483692498a8 404B / 404B                         0.6s
+ => => sha256:745dfb2690dd8627e1593941caccc756f14943df7930a478beb4e808c5695cb9 965B / 965B                         0.2sG
+ => => sha256:6c53d0b2a666ed8f8fad8d9982e30cf24eb085036c17b27591665ca25e1ba40c 629B / 629B                         0.3s
+ => => sha256:d9aae54b58315e84b9c3ac5f00bad6610e0e28ad9ff28fcde694647e0be13131 1.93MB / 1.93MB                     4.7sG
+ => => extracting sha256:d9aae54b58315e84b9c3ac5f00bad6610e0e28ad9ff28fcde694647e0be13131                          0.3s
+ => => extracting sha256:6c53d0b2a666ed8f8fad8d9982e30cf24eb085036c17b27591665ca25e1ba40c                          0.0s
+ => => extracting sha256:745dfb2690dd8627e1593941caccc756f14943df7930a478beb4e808c5695cb9                          0.0s
+ => => extracting sha256:9a9a644fdd6a3681d43dace44c8cfef374cfd7b24f433113379ea483692498a8                          0.0s
+ => => extracting sha256:64c8194480fee2c03e01cc561cf5542733627d2c7de493a028139677025f975c                          0.0s
+ => => extracting sha256:e76228b47809e8a4bd37a6ba52a04d282d8c72ddf0ff9e8b83fd6318631abd52                          0.0s
+ => => extracting sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e                          1.0s
+ => [internal] load build context                                                                                  0.9s
+ => => transferring context: 6.58MB                                                                                0.8s
+ => [2/4] RUN rm -rf /usr/share/nginx/html/*                                                                       0.5s
+ => [3/4] COPY nginx.conf /etc/nginx/nginx.conf                                                                    0.0s
+ => [4/4] COPY billingApp /usr/share/nginx/html                                                                    0.1s
+ => exporting to image                                                                                             1.2s
+ => => exporting layers                                                                                            0.7s
+ => => exporting manifest sha256:6ca9bd97f79cf7d04233f32286ec615def3ba8131d6db4e102eddbbd595d1f18                  0.0s
+ => => exporting config sha256:1e2cdae123a1ea2bcf29151444e9b0a9e81bc7b50d74953c51b95f52d332a734                    0.0s
+ => => exporting attestation manifest sha256:69785701f637fbdff9bbd27c6ae57d03b76e61bf9ff560a2e6f9008c5265574f      0.0s
+ => => exporting manifest list sha256:0a8a99124567713c0f88cb772741da7f2e533b26151d391e8ae5d81a18ea95b7             0.0s
+ => => naming to docker.io/library/billingapp-front:0.0.4                                                          0.0s
+ => => unpacking to docker.io/library/billingapp-front:0.0.4                                                       0.2s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/klh98zmrosvazgz0s6faypeke
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load billingapp-front:0.0.4
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl apply -f deployment-back.yaml
+deployment.apps/billing-app-back-deployment created
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl apply -f deployment-front.yaml
+deployment.apps/billing-app-front-deployment created
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl get pods
+NAME                                            READY   STATUS             RESTARTS      AGE
+billing-app-back-deployment-7765c9d45-7bmw6     0/1     Error              1 (13s ago)   15s
+billing-app-back-deployment-7765c9d45-mr52l     0/1     Error              1 (13s ago)   15s
+billing-app-back-deployment-7765c9d45-zt54w     0/1     CrashLoopBackOff   1 (11s ago)   15s
+billing-app-front-deployment-75d74d9754-57srk   1/1     Running            0             13s
+billing-app-front-deployment-75d74d9754-mcbkc   1/1     Running            0             13s
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl logs deployment/billing-app-back-deployment
+Found 3 pods, using pod/billing-app-back-deployment-7765c9d45-7bmw6
+Error: Invalid or corrupt jarfile /app.jar
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLING[+] Building 5.3s (9/9) FINISHED                                                                   docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 387B                                                                               0.0s
+ => [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk-alpine                                   1.4s
+ => [auth] library/eclipse-temurin:pull token for registry-1.docker.io                                             0.0s
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [1/3] FROM docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6dfa4c1c5  0.0s
+ => => resolve docker.io/library/eclipse-temurin:17-jdk-alpine@sha256:b455964e5e139d42554cc33981435aec8b6dfa4c1c5  0.0s
+ => [internal] load build context                                                                                  0.0s
+ => => transferring context: 50B                                                                                   0.0s
+ => CACHED [2/3] RUN addgroup -S devopsc && adduser -S -G devopsc javams                                           0.0s
+ => [3/3] ADD billing-0.0.4-SNAPSHOT.jar app.jar                                                                   0.1sG
+ => exporting to image                                                                                             3.4sj
+ => => exporting layers                                                                                            2.8s
+ => => exporting manifest sha256:d8d15679c9668754f2dd345b3a618ba217412860e89e8aa5b185b80a6e07b1d8                  0.0s
+ => => exporting config sha256:a9dc1085800a52b8dc2090ae1b217a6956e09feae369858791a9a36984aab3c3                    0.0s
+ => => exporting attestation manifest sha256:6124d5c928d4fd7af110f899b40ca990ca98119f224080efc84b8af24be215be      0.0s
+ => => exporting manifest list sha256:d6ad925c8bb14f597822b69b734b8ed6bcac81bf076b4cddfca7b21b20b8b8ba             0.0s
+ => => naming to docker.io/library/billingapp-back:0.0.4                                                           0.0s
+ => => unpacking to docker.io/library/billingapp-back:0.0.4                                                        0.5s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/dsfngo9t43r1ns0dca14tv7ug
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load billingapp-back:0.0.4
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl rollout restart deployment/billing-app-back-deployment
+deployment.apps/billing-app-back-deployment restarted
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl get pods
+NAME                                            READY   STATUS    RESTARTS   AGE
+billing-app-back-deployment-564bdc68f4-9grfl    1/1     Running   0          25s
+billing-app-back-deployment-564bdc68f4-ph4tk    1/1     Running   0          20s
+billing-app-back-deployment-564bdc68f4-xtdx2    1/1     Running   0          24s
+billing-app-front-deployment-75d74d9754-57srk   1/1     Running   0          3m5s
+billing-app-front-deployment-75d74d9754-mcbkc   1/1     Running   0          3m5s
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl apply -f service-back.yaml
+service/billing-app-back-service created
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl apply -f service-front.yaml
+service/billing-app-front-service created
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube start
+* minikube v1.39.0 en Microsoft Windows 10 Pro 22H2
+* Using the docker driver based on existing profile
+* Starting "minikube" primary control-plane node in "minikube" cluster
+* Pulling base image v0.0.51 ...
+* Updating the running docker "minikube" container ...
+* Preparando Kubernetes v1.37.0 en containerd 2.3.4...
+* Verifying Kubernetes components...
+  - Using image gcr.io/k8s-minikube/storage-provisioner:v5
+* Complementos habilitados: storage-provisioner, default-storageclass
+* Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load billingapp-back:0.0.4
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube image load billingapp-front:0.0.4
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> cd C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app
+Set-Location : No se encuentra ningún parámetro de posición que acepte el argumento
+'Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app'.
+En línea: 1 Carácter: 1
++ cd C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl apply -f deployment-back.yaml
+deployment.apps/billing-app-back-deployment unchanged
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl apply -f deployment-front.yaml
+deployment.apps/billing-app-front-deployment unchanged
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl apply -f service-back.yaml
+service/billing-app-back-service unchanged
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl apply -f service-front.yaml
+service/billing-app-front-service unchanged
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> kubectl get pods
+NAME                                            READY   STATUS    RESTARTS        AGE
+billing-app-back-deployment-564bdc68f4-9grfl    0/1     Error     5 (3m3s ago)    12m
+billing-app-back-deployment-564bdc68f4-ph4tk    0/1     Error     5 (3m10s ago)   12m
+billing-app-back-deployment-564bdc68f4-xtdx2    0/1     Error     5 (3m1s ago)    12m
+billing-app-front-deployment-75d74d9754-57srk   1/1     Running   0               15m
+billing-app-front-deployment-75d74d9754-mcbkc   1/1     Running   0               15m
+PS C:\Users\Diana Os\Documents\DEVOPS\Practicas_DEVOPS_2026\Prueba_10_Kubernetes_BILLINGAPP\Prueba_10_Kubernetes_BILLINGAPP\app> minikube service billing-app-front-service
+┌───────────┬───────────────────────────┬─────────────┬───────────────────────────┐
+│ NAMESPACE │           NAME            │ TARGET PORT │            URL            │
+├───────────┼───────────────────────────┼─────────────┼───────────────────────────┤
+│ default   │ billing-app-front-service │ 80          │ http://192.168.49.2:30100 │
+└───────────┴───────────────────────────┴─────────────┴───────────────────────────┘
+* Starting tunnel for service billing-app-front-service.
+┌───────────┬───────────────────────────┬─────────────┬────────────────────────┐
+│ NAMESPACE │           NAME            │ TARGET PORT │          URL           │
+├───────────┼───────────────────────────┼─────────────┼────────────────────────┤
+│ default   │ billing-app-front-service │             │ http://127.0.0.1:53851 │
+└───────────┴───────────────────────────┴─────────────┴────────────────────────┘
+* Opening service default/billing-app-front-service in default browser...
+! Porque estás usando controlador Docker en windows, la terminal debe abrirse para ejecutarlo.
+
+
+
+
+
+
+
+
+
+

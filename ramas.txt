@@ -1,0 +1,33 @@
+git branch -M master 
+git push -u origin master 
+git pull origin master 
+
+craer otra rama
+git branch
+git branch feature-di-landing master
+git branch
+
+
+
+Requerimientos.txt
+
+
+git checkout feature-di-landing master
+git checout master
+
+crear rama al trabajar en un project manager y hacer los oush ahi 
+git branch -d feature-sa-landing ////////////para borrar la rama
+
+
+Fusion local
+
+Merge pull request 
+
+
+
+1. PM crea un proyecto en github
+2. PM agrega usuarios / desarrolladores / colaboradores para que puedan clonar el proyecto
+3. El colaboradr clona el proyecto 
+4. colaboradora crea una rama, realiza cambios y sube dicha rama
+5. colaboradora solicita un PULL REQUEST 
+6. PM acepta la fusion del PULL REQUEST 
